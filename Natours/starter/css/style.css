@@ -143,7 +143,7 @@ body {
     display: inline-block;
     text-transform: uppercase;
     text-decoration: none;
-    transition: all .2s;
+    transition: all .2s;  
     padding: 15px 40px;
     position: relative;
 }
@@ -187,4 +187,5 @@ body {
 
 .btn-animated {
     animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
 }
