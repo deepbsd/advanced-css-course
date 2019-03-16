@@ -1,4 +1,26 @@
 /*
+    0 - 600px:              phone
+    600 - 900px:            tablet in portrait mode
+    900 - 1200px:           tablet in landscape mode
+    1200 - 1800px:          desktop - normal styles apply
+
+    1800px +                Big Desktops
+
+
+    $breakpoint argument choices...
+     - phone
+     - tab-port
+     - tab-land
+     - big-desktop
+
+    // Order of responsive editing
+    ORDER: Base + typeography > general layout + grid > page layout > components
+
+
+
+     1em = 16px
+*/
+/*
 COLORS:
 
 Light green: #7ed56f
@@ -48,6 +70,18 @@ html {
      * 16px/10px = .625 or 62.5% percentage.  check: .625*16 = 10px
      * font-size: 10px;  */
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 43.75%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
